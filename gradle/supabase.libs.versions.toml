@@ -1,0 +1,23 @@
+# Home page https://ktor.io/
+# Source code https://github.com/ktorio/ktor
+# Maven https://central.sonatype.com/artifact/io.github.jan-tennert.supabase/
+
+[versions]
+supabase = "3.2.6"
+
+[libraries]
+bom = { group = "io.github.jan-tennert.supabase", name = "bom", version.ref = "supabase" }
+apollo-graphql = { group = "io.github.jan-tennert.supabase", name = "apollo-graphql", version.ref = "supabase" }
+coil = { group = "io.github.jan-tennert.supabase", name = "coil-integration", version.ref = "supabase" }
+coil3 = { group = "io.github.jan-tennert.supabase", name = "coil3-integration", version.ref = "supabase" }
+compose-auth = { group = "io.github.jan-tennert.supabase", name = "compose-auth", version.ref = "supabase" }
+compose-auth-ui = { group = "io.github.jan-tennert.supabase", name = "compose-auth-ui", version.ref = "supabase" }
+sketch = { group = "io.github.jan-tennert.supabase", name = "sketch-integration", version.ref = "supabase" }
+supabase = { group = "io.github.jan-tennert.supabase", name = "supabase-kt", version.ref = "supabase" }
+storage = { group = "io.github.jan-tennert.supabase", name = "storage-kt", version.ref = "supabase" }
+auth = { group = "io.github.jan-tennert.supabase", name = "auth-kt", version.ref = "supabase" }
+realtime = { group = "io.github.jan-tennert.supabase", name = "realtime-kt", version.ref = "supabase" }
+functions = { group = "io.github.jan-tennert.supabase", name = "functions-kt", version.ref = "supabase" }
+postgrest = { group = "io.github.jan-tennert.supabase", name = "postgrest-kt", version.ref = "supabase" }
+serializer-jackson = { group = "io.github.jan-tennert.supabase", name = "serializer-jackson", version.ref = "supabase" }
+serializer-moshi = { group = "io.github.jan-tennert.supabase", name = "serializer-moshi", version.ref = "supabase" }
