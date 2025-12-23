@@ -6,7 +6,7 @@ fun Project.mavenPublish() {
         repositories {
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/Jacknic/hmios-core")
+                url = uri("https://maven.pkg.github.com/Jacknic/catalog")
                 credentials {
                     username = System.getenv("GITHUB_ACTOR")
                     password = System.getenv("GITHUB_TOKEN")
