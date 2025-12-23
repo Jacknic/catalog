@@ -1,0 +1,9 @@
+[versions]
+
+[libraries]
+catalog = { group = "com.jacknic.catalog", name = "catalog", version = "1.0.0-SNAPSHOT" }
+
+[bundles]
+
+
+[plugins]

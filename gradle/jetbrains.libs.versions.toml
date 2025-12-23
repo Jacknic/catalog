@@ -1,0 +1,6 @@
+[libraries]
+# Home page https://ktor.io/
+# Source code https://github.com/ktorio/ktor
+# Maven https://central.sonatype.com/artifact/io.ktor/ktor-version-catalog/versions
+ktor-version-catalog = "io.ktor:ktor-version-catalog:3.3.3"
+

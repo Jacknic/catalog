@@ -1,0 +1,4 @@
+[versions]
+
+[plugins]
+dokka-gradle-plugin = { id = "org.jetbrains.dokka", version = "2.1.0" }
