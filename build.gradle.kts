@@ -12,6 +12,14 @@ fun Project.mavenPublish() {
                     password = System.getenv("GITHUB_TOKEN")
                 }
             }
+            maven {
+                name = "CNB"
+                url = uri("https://maven.cnb.cool/jacknic/maven-public/-/packages/")
+                credentials {
+                    username = "cnb"
+                    password = System.getenv("CNB_TOKEN")
+                }
+            }
         }
         publications {
             create<MavenPublication>("main") {
