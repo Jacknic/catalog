@@ -1,9 +1,9 @@
-# Home page https://ktor.io/
-# Source code https://github.com/ktorio/ktor
-# Maven https://central.sonatype.com/artifact/io.github.jan-tennert.supabase/
+# Home page https://supabase.com/docs/guides/getting-started/quickstarts/kotlin
+# Source code https://github.com/supabase-community/supabase-kt/
+# Maven https://central.sonatype.com/artifact/io.github.jan-tennert.supabase/bom/overview
 
 [versions]
-supabase = "3.2.6"
+supabase = "3.3.0"
 
 [libraries]
 bom = { group = "io.github.jan-tennert.supabase", name = "bom", version.ref = "supabase" }

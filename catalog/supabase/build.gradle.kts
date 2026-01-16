@@ -3,4 +3,4 @@ plugins {
     `maven-publish`
 }
 
-version = "3.2.6-SNAPSHOT"
+version = supabase.versions.supabase.get()
