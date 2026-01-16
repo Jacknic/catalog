@@ -5,6 +5,15 @@ dependencyResolutionManagement {
         mavenCentral()
         google()
     }
+
+    versionCatalogs {
+        fileTree("gradle") { include("*.libs.versions.toml") }.forEach {
+            val catalogName = it.name.substringBefore(".")
+            create(catalogName) {
+                from(files(it))
+            }
+        }
+    }
 }
 
 plugins {
