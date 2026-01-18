@@ -1,0 +1,60 @@
+# Home page https://jetbrains.com/lp/compose-multiplatform
+# Source code https://github.com/JetBrains/compose-multiplatform
+# klibs https://klibs.io/project/JetBrains/compose-multiplatform
+
+[versions]
+kmp = "1.10.0"
+
+[libraries]
+core-bundle = { module = "org.jetbrains.androidx.core:core-bundle", version = "1.1.0-alpha03" }
+core-uri = { module = "org.jetbrains.androidx.core:core-uri", version = "1.1.0-alpha03" }
+animation = { module = "org.jetbrains.compose.animation:animation", version = "1.5.12" }
+animation-core = { module = "org.jetbrains.compose.animation:animation-core", version = "1.5.12" }
+animation-graphics = { module = "org.jetbrains.compose.animation:animation-graphics", version = "1.5.12" }
+annotation = { module = "org.jetbrains.compose.annotation-internal:annotation", version = "1.8.0-alpha01" }
+collection = { module = "org.jetbrains.compose.collection-internal:collection", version = "1.6.0-beta02" }
+components-animatedimage = { module = "org.jetbrains.compose.components:components-animatedimage", version.ref = "kmp" }
+components-resources = { module = "org.jetbrains.compose.components:components-resources", version.ref = "kmp" }
+components-splitpane = { module = "org.jetbrains.compose.components:components-splitpane", version.ref = "kmp" }
+components-ui-tooling-preview = { module = "org.jetbrains.compose.components:components-ui-tooling-preview", version.ref = "kmp" }
+desktop = { module = "org.jetbrains.compose.desktop:desktop", version.ref = "kmp" }
+foundation = { module = "org.jetbrains.compose.foundation:foundation", version = "1.5.12" }
+foundation-layout = { module = "org.jetbrains.compose.foundation:foundation-layout", version = "1.5.12" }
+html-compiler-integration = { module = "org.jetbrains.compose.html:compose-compiler-integration", version.ref = "kmp" }
+html-compiler-integration-lib = { module = "org.jetbrains.compose.html:compose-compiler-integration-lib", version.ref = "kmp" }
+html-benchmark-core = { module = "org.jetbrains.compose.html:html-benchmark-core", version.ref = "kmp" }
+html-core = { module = "org.jetbrains.compose.html:html-core", version.ref = "kmp" }
+html-integration-core = { module = "org.jetbrains.compose.html:html-integration-core", version.ref = "kmp" }
+html-svg = { module = "org.jetbrains.compose.html:html-svg", version.ref = "kmp" }
+html-test-utils = { module = "org.jetbrains.compose.html:html-test-utils", version.ref = "kmp" }
+html-core-runtime = { module = "org.jetbrains.compose.html:internal-html-core-runtime", version.ref = "kmp" }
+material = { module = "org.jetbrains.compose.material:material", version = "1.5.12" }
+material-icons-core = { module = "org.jetbrains.compose.material:material-icons-core", version = "1.5.12" }
+material-icons-extended = { module = "org.jetbrains.compose.material:material-icons-extended", version = "1.5.12" }
+material-ripple = { module = "org.jetbrains.compose.material:material-ripple", version = "1.5.12" }
+material3 = { module = "org.jetbrains.compose.material3:material3", version = "1.5.12" }
+runtime = { module = "org.jetbrains.compose.runtime:runtime", version = "1.5.12" }
+runtime-saveable = { module = "org.jetbrains.compose.runtime:runtime-saveable", version = "1.5.12" }
+ui = { module = "org.jetbrains.compose.ui:ui", version = "1.5.12" }
+ui-backhandler = { module = "org.jetbrains.compose.ui:ui-backhandler", version.ref = "kmp" }
+ui-geometry = { module = "org.jetbrains.compose.ui:ui-geometry", version = "1.5.12" }
+ui-graphics = { module = "org.jetbrains.compose.ui:ui-graphics", version = "1.5.12" }
+ui-test = { module = "org.jetbrains.compose.ui:ui-test", version = "1.5.12" }
+ui-test-junit4 = { module = "org.jetbrains.compose.ui:ui-test-junit4", version = "1.5.12" }
+ui-text = { module = "org.jetbrains.compose.ui:ui-text", version = "1.5.12" }
+ui-tooling = { module = "org.jetbrains.compose.ui:ui-tooling", version = "1.5.12" }
+ui-tooling-data = { module = "org.jetbrains.compose.ui:ui-tooling-data", version = "1.5.12" }
+ui-tooling-preview = { module = "org.jetbrains.compose.ui:ui-tooling-preview", version = "1.5.12" }
+ui-uikit = { module = "org.jetbrains.compose.ui:ui-uikit", version.ref = "kmp" }
+ui-unit = { module = "org.jetbrains.compose.ui:ui-unit", version = "1.5.12" }
+ui-util = { module = "org.jetbrains.compose.ui:ui-util", version = "1.5.12" }
+web-compiler-integration = { module = "org.jetbrains.compose.web:compose-compiler-integration", version = "1.3.1" }
+web-compiler-integration-lib = { module = "org.jetbrains.compose.web:compose-compiler-integration-lib", version = "1.3.1" }
+web-core-runtime = { module = "org.jetbrains.compose.web:internal-web-core-runtime", version = "1.3.1" }
+web-test-utils = { module = "org.jetbrains.compose.web:test-utils", version = "1.3.1" }
+web-benchmark-core = { module = "org.jetbrains.compose.web:web-benchmark-core", version = "1.3.1" }
+web-core = { module = "org.jetbrains.compose.web:web-core", version = "1.3.1" }
+web-integration-core = { module = "org.jetbrains.compose.web:web-integration-core", version = "1.3.1" }
+web-integration-widgets = { module = "org.jetbrains.compose.web:web-integration-widgets", version = "1.1.1" }
+web-svg = { module = "org.jetbrains.compose.web:web-svg", version = "1.3.1" }
+web-widgets = { module = "org.jetbrains.compose.web:web-widgets", version = "1.1.1" }
