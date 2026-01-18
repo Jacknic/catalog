@@ -47,6 +47,7 @@ fun Project.mavenPublish() {
 
 subprojects {
     pluginManager.withPlugin("maven-publish") {
+        version = libs.versions.version.get()
         afterEvaluate { mavenPublish() }
     }
 

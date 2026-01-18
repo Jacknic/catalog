@@ -1,7 +1,8 @@
 [versions]
+version = "2026.01.01-SNAPSHOT"
 
 [libraries]
-catalog = { group = "com.jacknic.catalog", name = "catalog", version = "1.0.0-SNAPSHOT" }
+catalog = { group = "com.jacknic.catalog", name = "catalog", version.ref = "version" }
 
 [bundles]
 
