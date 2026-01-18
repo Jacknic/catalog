@@ -8,3 +8,5 @@ catalog = { group = "com.jacknic.catalog", name = "catalog", version.ref = "vers
 
 
 [plugins]
+
+publish = { id = "com.vanniktech.maven.publish", version = "0.35.0" }

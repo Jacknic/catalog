@@ -1,3 +1,7 @@
+plugins {
+    alias(libs.plugins.publish)
+}
+
 /**
  * 库发布配置统一处理
  */
@@ -21,6 +25,7 @@ fun Project.mavenPublish() {
                 }
             }
         }
+/*
         publications {
             create<MavenPublication>("main") {
                 val groupIdBuilder = StringBuilder(libs.catalog.get().group)
@@ -41,12 +46,14 @@ fun Project.mavenPublish() {
                 }
             }
         }
+*/
     }
 }
 
 
 subprojects {
     pluginManager.withPlugin("maven-publish") {
+        pluginManager.apply(libs.plugins.publish.get().pluginId)
         version = libs.versions.version.get()
         afterEvaluate { mavenPublish() }
     }
