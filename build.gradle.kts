@@ -1,3 +1,5 @@
+import org.gradle.internal.extensions.stdlib.capitalized
+
 plugins {
     alias(libs.plugins.publish)
 }
@@ -25,37 +27,23 @@ fun Project.mavenPublish() {
                 }
             }
         }
-/*
-        publications {
-            create<MavenPublication>("main") {
-                val groupIdBuilder = StringBuilder(libs.catalog.get().group)
-                groupId = groupIdBuilder.toString()
-                var targetComponent: SoftwareComponent? = components.findByName("release")
-                if (targetComponent == null) {
-                    targetComponent = components.first {
-                        it.name in listOf("java", "versionCatalog")
-                    }
-                    tasks.firstOrNull {
-                        it.name in listOf("releaseSourcesJar", "kotlinSourcesJar")
-                    }?.let { artifact(it) }
-                }
-                from(targetComponent!!)
-                pom {
-                    version = version
-                    description.set(project.description)
-                }
-            }
-        }
-*/
     }
 }
 
 
 subprojects {
     pluginManager.withPlugin("maven-publish") {
-        pluginManager.apply(libs.plugins.publish.get().pluginId)
         version = libs.versions.version.get()
-        afterEvaluate { mavenPublish() }
+        afterEvaluate {
+            /**
+             * 属性配置 [com.vanniktech.maven.publish.MavenPublishBaseExtension.pomFromGradleProperties]
+             */
+            val pomName = name.capitalized()
+            project.ext.set("POM_NAME", pomName)
+            project.ext.set("POM_DESCRIPTION", "$pomName Catalog")
+            pluginManager.apply(libs.plugins.publish.get().pluginId)
+            mavenPublish()
+        }
     }
 
     val tomlFile: File = rootProject.file("gradle/${project.name}.libs.versions.toml")
